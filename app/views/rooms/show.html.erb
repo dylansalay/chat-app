@@ -8,8 +8,6 @@
 <%= link_to 'Edit', edit_room_path(@room) %> |
 <%= link_to 'Back', rooms_path %>
 
-<div id="messages">
-  <%= render @room.messages %>
-</div>
+<%= render @room.messages %>
 
 <%= link_to "New Message", new_room_message_path(@room) %>
